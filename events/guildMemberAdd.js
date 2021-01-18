@@ -55,7 +55,7 @@ module.exports = class {
 							ctx = canvas.getContext("2d");
                     
 						// Background language
-						const background = await Canvas.loadImage("./assets/img/greetings_background.png");
+						const background = await Canvas.loadImage("./assets/img/caffeine.jpg");
 						// This uses the canvas dimensions to stretch the image onto the entire canvas
 						ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 						// Draw username
@@ -78,17 +78,17 @@ module.exports = class {
 							memberCount: member.guild.memberCount
 						}), 40, canvas.height - 50);
 						// Draw # for discriminator
-						ctx.fillStyle = "#44d14a";
+						ctx.fillStyle = "#ffffff";
 						ctx.font = "75px SketchMatch";
 						ctx.fillText("#", canvas.width - 690, canvas.height - 165);
 						// Draw Title with gradient
 						ctx.font = "90px Bold";
-						ctx.strokeStyle = "#1d2124";
+						ctx.strokeStyle = "#000000";
 						ctx.lineWidth = 15;
 						ctx.strokeText(member.guild.translate("administration/welcome:TITLE"), canvas.width - 620, canvas.height - 330);
 						var gradient = ctx.createLinearGradient(canvas.width - 780, 0, canvas.width - 30, 0);
-						gradient.addColorStop(0, "#e15500");
-						gradient.addColorStop(1, "#e7b121");
+						gradient.addColorStop(0, "#2b2b2a");
+						gradient.addColorStop(1, "#5e5e5b");
 						ctx.fillStyle = gradient;
 						ctx.fillText(member.guild.translate("administration/welcome:TITLE"), canvas.width - 620, canvas.height - 330);
                 
@@ -97,7 +97,7 @@ module.exports = class {
 						//Define Stroke Line
 						ctx.lineWidth = 10;
 						//Define Stroke Style
-						ctx.strokeStyle = "#03A9F4";
+						ctx.strokeStyle = "#000000";
 						// Start the arc to form a circle
 						ctx.arc(180, 225, 135, 0, Math.PI * 2, true);
 						// Draw Stroke
