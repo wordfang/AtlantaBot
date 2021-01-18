@@ -31,7 +31,7 @@ const checks = [
 			client.login(config.token).then(async () => {
 				success("should be a valid bot token");
 				await readyResolve();
-				if(!client.guilds.cache.has("568120814776614924")){
+				if(!client.guilds.cache.has("799256537901039616")){
 					error("should be added to the emojis server", "please add your bot on this server: https://emojis.atlanta-bot.fr to make the emojis working");
 				} else {
 					success("should be added to the emojis server");
