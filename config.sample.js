@@ -61,7 +61,7 @@ module.exports = {
 			type: "LISTENING"
 		},
 		{
-			name: "my website : atlanta-bot.fr",
+			name: "🪐 at discord.io/caffeinee",
 			type: "PLAYING"
 		}
 	]
