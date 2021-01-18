@@ -40,14 +40,14 @@ module.exports = class {
 			version = require("../package.json").version;
 		let i = 0;
 		setInterval(function(){
-			const toDisplay = status[parseInt(i, 10)].name.replace("{serversCount}", client.guilds.cache.size)+" | v"+version;
+			const toDisplay = status[parseInt(i, 10)].name.replace("{serversCount}", client.guilds.cache.size);
 			client.user.setActivity(toDisplay, {type: status[parseInt(i, 10)].type});
 			if(status[parseInt(i+1, 10)]) i++;
 			else i = 0;
 		}, 20000); // Every 20 seconds
 
 		setTimeout(() => {
-			console.log(chalk.magenta("\n\nLike this bot?"), "Support us by adding a star on GitHub ❤️   https://github.com/Androz2091/AtlantaBot");
+			console.log(chalk.magenta("\n\nLike this bot?"), "Support us by adding a star on GitHub ❤️   https://github.com/wordfang/SAYANG");
 		}, 400);
 
 	}
