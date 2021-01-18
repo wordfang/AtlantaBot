@@ -10,7 +10,7 @@ module.exports = class {
 
 		if(this.client.config.proMode){
 			if((!this.client.config.proUsers.includes(guild.ownerID) || this.guilds.filter((g) => g.ownerID === guild.ownerID) > 1) && guild.ownerID !== this.client.config.owner.id){
-				this.client.logger.log(guild.ownerID+" tried to invite Atlanta on its server.");
+				this.client.logger.log(guild.ownerID+" tried to invite sayang on its server.");
 				return guild.leave();
 			}
 		}
